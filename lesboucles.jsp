@@ -90,7 +90,32 @@ public class TriangleRectangle {
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
+import java.util.Scanner;
 
+public class TriangleRectangleInverse {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in); 
+       
+        System.out.print("Entrez la taille du triangle inversé : ");
+        int taille = scanner.nextInt(); 
+
+      
+        for (int i = taille; i >= 1; i--) {
+
+           
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*"); 
+            }
+
+           
+            System.out.println();
+        }
+
+        scanner.close(); 
+    }
+}
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
